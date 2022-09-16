@@ -2,10 +2,10 @@
 
 ## gcc compile c code
 
-'''c=
+```c=
 gcc main.c layer.c neuron.c -o main
 ./main
-'''
+```
 
 ## Usage
 
