@@ -1,5 +1,12 @@
 # Neural-Network-framework-using-Backpropogation-in-C
 
+## gcc compile c code
+
+'''c=
+gcc main.c layer.c neuron.c -o main
+./main
+'''
+
 ## Usage
 
 Enter the number of Layers in Neural Network: 4 <br />
