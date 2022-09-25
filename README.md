@@ -92,4 +92,5 @@ Output: 0 <br />
 
 <meta name="google-site-verification" content="APiTrnY8096NLZZykRABFxdIDC_bJcc7LYFJMPljdVo" />
 
+## Loss figure
 ![image](https://github.com/Jonatt01/XOR_ML_model/blob/master/Loss_fig.png)
