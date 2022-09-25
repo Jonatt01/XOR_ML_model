@@ -6,6 +6,10 @@
 gcc main.c layer.c neuron.c -o main
 ./main
 ```
+## plot loss figure
+```c=
+python .\plot_cost
+```
 
 ## Usage
 
