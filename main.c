@@ -225,18 +225,25 @@ void train_neural_net(void)
     int i;
     int it=0;
 
+    // open a csv to save total cost
+    FILE *fpt;
+    fpt = fopen("MyFile.csv", "w+");
+    fprintf(fpt,"epoch, iteration, cost\n");
+
     // Gradient Descent
-    for(it=0;it<20000;it++)
+    for(it=0;it<20;it++)
     {
         for(i=0;i<num_training_ex;i++)
         {
+            fprintf(fpt,"%d, %d, ", it, i);
             feed_input(i);
             forward_prop();
-            compute_cost(i);
+            compute_cost(i, fpt);
             back_prop(i);
             update_weights();
         }
     }
+    fclose(fpt);
 }
 
 
@@ -302,7 +309,7 @@ void forward_prop(void)
 }
 
 // Compute Total Cost
-void compute_cost(int i)
+void compute_cost(int i,FILE *fpt)
 {
     int j;
     float tmpcost=0;
@@ -317,7 +324,8 @@ void compute_cost(int i)
 
     full_cost = (full_cost + tcost)/n;
     n++;
-    // printf("Full Cost: %f\n",full_cost);
+    printf("Full Cost: %f\n",full_cost);
+    fprintf(fpt,"%f\n",full_cost);
 }
 
 // Back Propogate Error
