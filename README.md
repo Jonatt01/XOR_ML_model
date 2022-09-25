@@ -91,3 +91,5 @@ Enter input to test: 1 1 <br />
 Output: 0 <br />
 
 <meta name="google-site-verification" content="APiTrnY8096NLZZykRABFxdIDC_bJcc7LYFJMPljdVo" />
+
+![image](https://github.com/Jonatt01/XOR_ML_model/blob/master/Loss_fig.png)
